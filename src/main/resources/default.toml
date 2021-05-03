@@ -1,0 +1,35 @@
+#This TOML file defines the information for the program to use to create the pack
+#For formatting information please see the XMM github here: https://github.com/XavierNCline/Xavier-s-Modpack-Manager
+#Information on TOML can be found here: https://toml.io/en/
+
+#Defines metadata regarding the pack
+#In the future, all of these fields will need to be correct for the program to function.
+#Right now, it's mostly pointless metadata. They do need something in them to prevent errors.
+[meta]
+owner = "Name Here"
+name = "Name of pack here"
+description = "Description here"
+version = "0.0.1"
+MCVersion = "1.16.5"
+ForgeVersion = "35.1.4"
+
+
+#Mods are defined under this table, along with destinations for packaged files.
+#Using any slash character is valid, the program automatically reformats these paths as needed.
+#Supported archives are .7z and .zip, both need to be the same archive type!
+#If you'd like additonal archive types to be supported, please let me know!
+
+#ModZip is not used and can be ignored when DownloadMode is true
+#Examples below.
+[mods]
+ConfigZip = "configzip.7z"
+ModZip = "modzip.7z"
+DownloadMode = false
+
+#Mod example below
+#[mod.JEI]
+#name = "Just Enough Items"
+#description = "Indexes items present in game and shows crafting recipes"
+#fileName = "jei-1.16.4-7.6.1.65"
+#downloadURL = "https://www.curseforge.com/minecraft/mc-mods/jei/download/3157864"
+#Note: downloadURL is not used and can be ignored when DownloadMode is false.
